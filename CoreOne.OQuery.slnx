@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/sample/">
+    <Project Path="sample/CoreOne.OQuery.Sample/CoreOne.OQuery.Sample.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CoreOne.OQuery.AspNetCore/CoreOne.OQuery.Web.csproj" />
+    <Project Path="src/CoreOne.OQuery/CoreOne.OQuery.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CoreOne.OQuery.AspNetCore.Tests/CoreOne.OQuery.AspNetCore.Tests.csproj" />
+    <Project Path="tests/CoreOne.OQuery.Tests/CoreOne.OQuery.Tests.csproj" />
+  </Folder>
+</Solution>

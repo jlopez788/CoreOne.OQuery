@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage" assemblyQualifiedName="Coverlet.Collector.DataCollection.CoverletInstrumentationCollector, coverlet.collector, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null" enabled="true">
+        <Configuration>
+          <Format>opencover</Format>
+          <UseSourceLink>true</UseSourceLink>
+          <IncludeTestAssembly>false</IncludeTestAssembly>
+          <SingleHit>false</SingleHit>
+          <ExcludeByAttribute>
+            <Attribute>System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute</Attribute>
+            <Attribute>GeneratedCodeAttribute</Attribute>
+            <Attribute>CompilerGeneratedAttribute</Attribute>
+          </ExcludeByAttribute>
+          <Exclude>
+            <!-- Exclude test projects -->
+            <Module>CoreOne.OQuery.Tests</Module>
+            <Module>CoreOne.OQuery.AspNetCore.Tests</Module>
+            <!-- Exclude sample project -->
+            <Module>CoreOne.OQuery.Sample</Module>
+          </Exclude>
+          <Include>
+            <!-- Include main projects only -->
+            <Module>CoreOne.OQuery</Module>
+            <Module>CoreOne.OQuery.AspNetCore</Module>
+          </Include>
+          <IncludeDirectory>
+            <Directory>src/CoreOne.OQuery</Directory>
+            <Directory>src/CoreOne.OQuery.AspNetCore</Directory>
+          </IncludeDirectory>
+          <ExcludeDirectory>
+            <Directory>src/CoreOne.OQuery.Tests</Directory>
+            <Directory>src/CoreOne.OQuery.AspNetCore.Tests</Directory>
+            <Directory>src/CoreOne.OQuery.Sample</Directory>
+          </ExcludeDirectory>
+          <ThresholdStat>Line</ThresholdStat>
+          <Threshold>60</Threshold>
+          <BranchThreshold>50</BranchThreshold>
+          <LineThreshold>60</LineThreshold>
+          <UseDefaultExcludes>true</UseDefaultExcludes>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
