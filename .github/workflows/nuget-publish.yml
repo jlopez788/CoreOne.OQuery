@@ -16,8 +16,8 @@ jobs:
         project:
           - name: coreone.oquery
             path: src/CoreOne.OQuery/CoreOne.OQuery.csproj
-          - name: coreone.oquery.aspnetcore
-            path: src/CoreOne.OQuery.AspNetCore/CoreOne.OQuery.AspNetCore.csproj
+          - name: coreone.oquery.web
+            path: src/CoreOne.OQuery.Web/CoreOne.OQuery.Web.csproj
 
     steps:
       - name: Checkout code
